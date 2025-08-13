@@ -1,0 +1,10 @@
+Resilience Orbit — Scorecard Guide (Quick)
+
+• Availability: Report against SLO (e.g., 99.9%) using error budget terms. If below target, list the top 1–2 contributing incidents.
+• MTTR: Use P1/P2 only. If above target, add the bottleneck you will remove next orbit.
+• Automation Shipped: Count only safeguards that reduce toil or mean time to recover (kill-switch, retries+jitter, circuit-breaker, failover, probes).
+• Game Day: “Pass” means alarm fired, responders paged, service restored under the target (e.g., <5 min), and learning captured.
+• Trend: Use arrow ↑/↓ and one sentence: “MTTR ↓ 12 min after automated rollback.”
+• Next Orbit: Three priorities that directly close the biggest gap observed.
+
+Share with execs within 48 hours of orbit end.

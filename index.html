@@ -1,220 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resilience Orbit™ — Run Resilience Like a Product</title>
-<meta name="description" content="Resilience Orbit™ — a 21-day operating system for predictable resilience. Deliberate, iterative, quick, measurable, sustainable — never an afterthought.">
-<meta name="theme-color" content="#0F172A">
-<style>
-:root { --bg:#0B1020; --panel:#0F172A; --ink:#E5E7EB; --muted:#94A3B8; --brand:#6366F1; --brand2:#22D3EE; --stroke:rgba(255,255,255,.12); --stroke2:rgba(255,255,255,.18); }
-* { box-sizing:border-box; } body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--ink);
-background: radial-gradient(1200px 800px at 80% -10%, rgba(34,211,238,.25), transparent 40%),
-           radial-gradient(900px 700px at 20% 0%, rgba(99,102,241,.25), transparent 45%),
-           linear-gradient(180deg, var(--bg) 0%, #080B16 100%); line-height:1.55; }
-a { color:inherit; text-decoration:none; }
-.container { max-width:1100px; margin:0 auto; padding:24px 16px; }
-header { padding: clamp(36px, 5vw, 64px) 0 12px; }
-h1 { margin:0 0 8px; font-size: clamp(28px, 5vw, 52px); letter-spacing:.2px; }
-h1 sup { font-size:.55em; vertical-align:super; }
-.sub { color:var(--muted); font-size: clamp(15px, 2.1vw, 18px); margin:0 0 6px; }
-.tagline { margin:8px 0 12px; font-size: clamp(16px, 2.3vw, 20px); }
-.em { font-weight:700; background: linear-gradient(90deg, var(--brand), var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
-.badges { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
-.badge { font-size:12.5px; letter-spacing:.3px; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.05); border:1px solid var(--stroke2); }
-.cta { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
-.btn { display:inline-flex; align-items:center; gap:8px; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:700;
-        background: linear-gradient(90deg, var(--brand), var(--brand2)); color:#06101a; box-shadow: 0 6px 18px rgba(99,102,241,.18); }
-.btn.secondary { background: rgba(255,255,255,.06); color:#fff; border:1px solid var(--stroke2); box-shadow:none; font-weight:600; }
-.panel { background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid var(--stroke); border-radius:18px; padding:18px; margin-top:18px; }
-.panel.emphasis{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.28);box-shadow:0 8px 28px rgba(99,102,241,.18), inset 0 1px 0 rgba(255,255,255,.08)}
-.section-title { margin:0 0 10px; font-size: 20px; font-weight:800; }
-.tiles { display:grid; gap:12px; grid-template-columns: repeat(3, 1fr); }
-.tiles.cols-4 { grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 980px) { .tiles, .tiles.cols-4 { grid-template-columns:1fr; } }
-.tile { padding:14px; border-radius:14px; border:1px solid var(--stroke); background: rgba(255,255,255,.03); font-size:14px; }
-.sep { height:1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent); margin:22px 0; }
-footer { padding:22px; text-align:center; color:var(--muted); font-size:13px; }
-ul,ol { margin:0 0 0 20px; }
-.media { border-radius:14px; border:1px solid var(--stroke2); overflow:hidden; background:#0b1222 }
-.media img, .media svg { display:block; width:100%; height:auto }
-.small { color:var(--muted); font-size:13px }
-
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-.logo-chip{display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--stroke2)}
-.logo-chip img{height:48px;width:auto;display:block}
-
-</style>
-
-<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-<meta property="og:title" content="Resilience Orbit — Run Resilience Like a Product">
-<meta property="og:description" content="A 21-day operating system for predictable resilience. Deliberate, iterative, measurable, sustainable.">
-<meta property="og:image" content="og.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Resilience Orbit — Run Resilience Like a Product">
-<meta name="twitter:description" content="A 21-day operating system for predictable resilience.">
-<meta name="twitter:image" content="og.png">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resilience Orbit™ — Run Resilience Like a Product</title>
+  <meta name="description" content="Resilience Orbit™: a pragmatic, repeatable loop to run resilience like a product—simulate volatility, ship safeguards, game day in prod, and publish a scorecard.">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Resilience Orbit™ — Run Resilience Like a Product">
+  <meta property="og:description" content="Simulate. Ship. Game Day. Score. Repeat. A 21‑day loop for measurable resilience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.resilienceorbit.com/assets/logo.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --bg: #fff; --fg: #111; --muted: #666; --accent: #111;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color: var(--fg); background: var(--bg); }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:24px 20px; max-width:1100px; margin:0 auto; }
+    header img { height:44px; }
+    h1 { margin:0; font-size:20px; font-weight:600; letter-spacing:.2px; }
+    main { max-width:1100px; margin: 20px auto 80px; padding: 0 20px; }
+    .downloads { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:14px; margin-top:12px; }
+    .card { border:1px solid #eee; border-radius:16px; padding:16px; transition: transform .1s ease, box-shadow .1s ease; background:#fff; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+    .card h3 { margin:0 0 6px; font-size:16px; }
+    .card p { margin:0 0 10px; color:var(--muted); font-size:14px; line-height:1.35; }
+    .btn { display:inline-block; text-decoration:none; border:1px solid #111; color:#111; padding:9px 12px; border-radius:10px; font-weight:600; font-size:14px; }
+    .btn:hover { background:#111; color:#fff; }
+    .meta { color:var(--muted); font-size:12px; margin-top:6px; }
+    footer { max-width:1100px; margin:0 auto; padding:24px 20px 60px; color:var(--muted); font-size:14px; }
+    .about { margin-top:36px; }
+    .pill { display:inline-block; border:1px solid #e5e5e5; border-radius:999px; padding:4px 10px; font-size:12px; color:#444; }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-            <div class="brand"><h1 style="margin:0">Resilience Orbit<sup>™</sup></h1></div>
-<p class="sub">The operating system for predictable resilience.</p>
-      <p class="tagline">
-        Jump‑start or level up your technology ecosystem’s resilience — <span class="em">by design, not by hope</span>.
-        Make it a deliberate, conscious practice that is <strong>iterative</strong>, <strong>quick</strong>,
-        <strong>measurable</strong>, and <strong>sustainable</strong>. It is never an afterthought.
-      </p>
-      <div class="badges">
-        <span class="badge">21‑day closed loop</span>
-        <span class="badge">Simulate → Ship → Chaos‑test → Score</span>
-        <span class="badge">Exec‑ready metrics</span>
-        <span class="badge">Scrum &amp; DevOps ready</span>
-      </div>
-      <div class="cta">
-        <a class="btn" href="toolkit.pdf">Download Complete Toolkit</a>
-        <a class="btn secondary" href="quickstart.pdf">Quickstart (PDF)</a>
-      </div>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="/assets/logo.svg" alt="Resilience Orbit logo">
+      <h1>Resilience Orbit™</h1>
     </div>
+    <span class="pill">Last updated: August 13, 2025</span>
   </header>
-  <main class="container">
-    <div class="sep"></div>
-    <section class="panel emphasis" id="why">
-      <h2 class="section-title">Why Resilience Orbit?</h2>
-      <div class="tiles cols-4">
-        <div class="tile"><strong>Clarity</strong><br/>A simple loop that aligns product, platform, and operations.</div>
-        <div class="tile"><strong>Measured</strong><br/>Every cycle ends with a one‑page scorecard and two next actions.</div>
-        <div class="tile"><strong>Fast</strong><br/>Short cycles reduce time to value and improve recovery quickly.</div>
-        <div class="tile"><strong>Sustainable</strong><br/>Turns resilience into a steady habit, not a one‑off project.</div>
-      </div>
-    </section>
-    <section class="panel" id="diagram">
-      <h2 class="section-title">Resilience Loop</h2>
-      <div class="media" style="padding:12px">
-        <svg viewBox="0 0 1200 340" role="img" aria-label="Resilience loop: Ship self-healing → Chaos test → Executive scorecard" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <style><![CDATA[
-              .node { fill: rgba(255,255,255,0.05); stroke: rgba(255,255,255,0.18); }
-              .title { fill: #E5E7EB; font: 16px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-weight: 700; }
-              .sub { fill: #94A3B8; font: 13px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
-              .arrow { fill: none; stroke: rgba(229,231,235,0.65); stroke-width: 2.5; marker-end: url(#arrowhead); }
-            ]]>
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-.logo-chip{display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--stroke2)}
-.logo-chip img{height:48px;width:auto;display:block}
 
-</style>
-            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto">
-              <polygon points="0 0, 10 5, 0 10" fill="rgba(229,231,235,0.8)"/>
-            </marker>
-          </defs>
-          <path class="arrow" d="M 380 170 C 430 120, 530 120, 480 170" />
-          <path class="arrow" d="M 720 170 C 770 120, 870 120, 820 170" />
-          <path class="arrow" d="M 940 230 C 760 310, 420 310, 260 110" />
-          <a href="day1-guide.docx">
-            <g class="node" transform="translate(140,110)">
-              <rect x="0" y="0" rx="14" ry="14" width="240" height="120"/>
-              <text class="title" x="120" y="42" text-anchor="middle">Ship self‑healing</text>
-              <text class="sub" x="120" y="66" text-anchor="middle">Flags • rollback • circuit breaker</text>
-            </g>
-          </a>
-          <a href="quickstart.pdf">
-            <g class="node" transform="translate(480,110)">
-              <rect x="0" y="0" rx="14" ry="14" width="240" height="120"/>
-              <text class="title" x="120" y="42" text-anchor="middle">Chaos test</text>
-              <text class="sub" x="120" y="66" text-anchor="middle">Prove recovery in prod‑like</text>
-            </g>
-          </a>
-          <a href="scorecard-template.csv">
-            <g class="node" transform="translate(820,110)">
-              <rect x="0" y="0" rx="14" ry="14" width="240" height="120"/>
-              <text class="title" x="120" y="38" text-anchor="middle">Executive scorecard</text>
-              <text class="sub" x="120" y="62" text-anchor="middle">Availability • MTTR • automation</text>
-            </g>
-          </a>
-        </svg>
-      </div>
-      <p class="small">Ship a self‑healing change → run a targeted chaos test → publish the executive scorecard. Repeat every 21 days.</p>
+  <main>
+    <section>
+      <h2 style="font-size:22px; margin-bottom:8px;">Run resilience like a product.</h2>
+      <p style="max-width:780px; color:#333;">Every 21 days: simulate volatility, ship safeguards (kill‑switch, retries, failover), run a game day, and publish a scorecard. Simple loop, real outcomes.</p>
     </section>
-    <section class="panel" id="agile-devops">
-      <h2 class="section-title">How to Incorporate into Agile &amp; DevOps</h2>
-      <div class="tiles">
-        <div class="tile"><strong>Backlog</strong><ul><li>Add label <code>Resilience</code> (or <code>Orbit</code>).</li><li>Create 1–3 small resilience stories per sprint for one critical service.</li></ul></div>
-        <div class="tile"><strong>Planning</strong><ul><li>Reserve ~10% of capacity.</li><li>Pick one service + one failure mode to improve.</li><li>Add a resilience outcome to the sprint goal.</li></ul></div>
-        <div class="tile"><strong>Execution</strong><ul><li>Standups: 30‑sec “any resilience risks/signals?”</li><li><strong>DoR:</strong> service, failure mode, metric defined.</li><li><strong>DoD:</strong> runbook updated, alert owner set, SLO tile visible, small chaos check.</li></ul></div>
-      </div>
-      <div class="tiles" style="margin-top:12px">
-        <div class="tile"><strong>DevOps: PR Template</strong><pre>- [ ] Runbook link added
-- [ ] SLO impact reviewed (dashboard link)
-- [ ] Alert maps to a human
-- [ ] Rollback/flag path verified</pre></div>
-        <div class="tile"><strong>DevOps: CI/CD</strong><ul><li>Add a tiny post‑deploy “resilience” job with a safe chaos smoke in staging/prod‑like.</li><li>Gate on dashboard health or a simple probe.</li></ul></div>
-        <div class="tile"><strong>Feature Flags &amp; Observability</strong><ul><li>Ship one safety flag per sprint (kill‑switch/degrade/traffic shift).</li><li>Define one SLO per service; add one alert + one runbook link.</li></ul></div>
-      </div>
-    </section>
-    <section class="panel" id="dev-kit">
-      <h2 class="section-title">Use it now: PR &amp; DoD</h2>
-      <div class="tiles">
-        <div class="tile"><strong>PR checks (copy &amp; paste)</strong><pre>- [ ] Runbook link added
-- [ ] SLO impact reviewed (dashboard link)
-- [ ] Alert maps to a human
-- [ ] Rollback/flag path verified</pre><div class="cta"><a class="btn secondary" href="pr_template_snippet.md">Download PR template (MD)</a></div></div>
-        <div class="tile"><strong>Definition of Done — Resilience adds</strong><pre>- [ ] Runbook updated (5 lines: Symptom → First action → Owner → Escalation → Rollback/flag)
-- [ ] Alert owner set
-- [ ] SLO tile visible (dashboard link)
-- [ ] Rollback/flag path verified</pre><div class="cta"><a class="btn secondary" href="definition_of_done_additions.md">Download DoD (MD)</a></div></div>
-      </div>
-    </section>
-    <section class="panel" id="cadence">
-      <h2 class="section-title">21‑Day Cadence at a Glance</h2>
-      <div class="media" style="padding:8px">
-        <svg viewBox="0 0 1200 240" role="img" aria-label="21-day cadence timeline" xmlns="http://www.w3.org/2000/svg">
-          <defs><style><![CDATA[.bar { stroke: rgba(255,255,255,0.2); stroke-width: 10; }.phase { fill: rgba(255,255,255,0.06); stroke: rgba(255,255,255,0.18); }.label { fill: #E5E7EB; font: 14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }.gate { fill: rgba(99,102,241,0.5); }.chip { fill: rgba(34,211,238,0.15); stroke: rgba(34,211,238,0.6); }.chiptext { fill: #E5E7EB; font: 12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }]]>
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
-.logo-chip{display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--stroke2)}
-.logo-chip img{height:48px;width:auto;display:block}
 
-</style></defs>
-          <line class="bar" x1="60" y1="120" x2="1140" y2="120"/>
-          <rect class="phase" x="60" y="80" width="300" height="80" rx="10"/><text class="label" x="210" y="115" text-anchor="middle">Anticipate</text>
-          <rect class="phase" x="360" y="80" width="300" height="80" rx="10"/><text class="label" x="510" y="115" text-anchor="middle">Fortify</text>
-          <rect class="phase" x="660" y="80" width="240" height="80" rx="10"/><text class="label" x="780" y="115" text-anchor="middle">Validate</text>
-          <rect class="phase" x="900" y="80" width="300" height="80" rx="10"/><text class="label" x="1050" y="115" text-anchor="middle">Evolve</text>
-          <circle class="gate" cx="360" cy="120" r="5"/><text class="label" x="360" y="145" text-anchor="middle">Day 7</text>
-          <circle class="gate" cx="660" cy="120" r="5"/><text class="label" x="660" y="145" text-anchor="middle">Day 14</text>
-          <circle class="gate" cx="900" cy="120" r="5"/><text class="label" x="900" y="145" text-anchor="middle">Day 18</text>
-          <a href="toolkit.pdf"><rect class="chip" x="100" y="24" width="190" height="28" rx="8" /><text class="chiptext" x="195" y="42" text-anchor="middle">Toolkit (PDF)</text></a>
-          <a href="quickstart.pdf"><rect class="chip" x="360" y="24" width="220" height="28" rx="8" /><text class="chiptext" x="470" y="42" text-anchor="middle">Quickstart (PDF)</text></a>
-          <a href="scorecard-template.csv"><rect class="chip" x="900" y="24" width="260" height="28" rx="8" /><text class="chiptext" x="1030" y="42" text-anchor="middle">Executive Scorecard (Template)</text></a>
-        </svg>
+    <section class="about">
+      <h2 style="font-size:18px; margin-bottom:8px;">About the Creator</h2>
+      <p style="max-width:780px;">
+        Resilience Orbit™ was created by
+        <a href="https://www.linkedin.com/in/sumayashakir" target="_blank" rel="noopener">Sumaya Shakir</a>
+        to help teams run resilience like a product—small loops, measurable outcomes, and pragmatic engineering.
+        For speaking, workshops, or implementation help, email
+        <a href="mailto:info@resilienceorbit.com">info@resilienceorbit.com</a>.
+      </p>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2 style="font-size:18px; margin-bottom:8px;">Downloads</h2>
+      <div class="downloads">
+        <div class="card">
+          <h3>Complete Toolkit (PDF)</h3>
+          <p>Everything needed to launch the Orbit loop: framework, checklists, examples.</p>
+          <a class="btn" href="/downloads/resilience-orbit-complete-toolkit.pdf" download>Download PDF</a>
+          <div class="meta">File: resilience-orbit-complete-toolkit.pdf</div>
+        </div>
+
+        <div class="card">
+          <h3>Quickstart Guide (PDF)</h3>
+          <p>Condensed steps to start your first 21‑day orbit.</p>
+          <a class="btn" href="/downloads/resilience-orbit-quickstart.pdf" download>Download PDF</a>
+          <div class="meta">File: resilience-orbit-quickstart.pdf</div>
+        </div>
+
+        <div class="card">
+          <h3>Executive Scorecard — Template (CSV)</h3>
+          <p>Share outcomes with leadership: availability, MTTR, automations shipped, game day results.</p>
+          <a class="btn" href="/downloads/resilience-orbit-exec-scorecard-template.csv" download>Download CSV</a>
+          <div class="meta">CSV with built‑in guidance</div>
+        </div>
+
+        <div class="card">
+          <h3>Day‑1: 90‑Minute Launch (DOCX)</h3>
+          <p>Facilitator guide for the kickoff session: scope, runbook, safeguard, game day, score.</p>
+          <a class="btn" href="/downloads/resilience-orbit-day1-90min-launch.docx" download>Download DOCX</a>
+          <div class="meta">DOCX formatted for exec/workshop use</div>
+        </div>
+
+        <div class="card">
+          <h3>PR Template (MD)</h3>
+          <p>Pull request checklist tuned for resilience work.</p>
+          <a class="btn" href="/downloads/resilience-orbit-pr-template.md" download>Download .md</a>
+          <div class="meta">Markdown</div>
+        </div>
+
+        <div class="card">
+          <h3>Definition of Done (MD)</h3>
+          <p>“Done” includes tests, observability, runbooks, rollback, and SLO impact.</p>
+          <a class="btn" href="/downloads/resilience-orbit-definition-of-done.md" download>Download .md</a>
+          <div class="meta">Markdown</div>
+        </div>
+
+        <div class="card">
+          <h3>Scorecard Guide (TXT)</h3>
+          <p>How to interpret metrics and set targets for the next orbit.</p>
+          <a class="btn" href="/downloads/resilience-orbit-scorecard-guide.txt" download>Download .txt</a>
+          <div class="meta">Plain text quick guide</div>
+        </div>
       </div>
-      <p class="small">Anticipate → Fortify → Validate → Evolve. Gates at Days 7, 14, and 18. Publish the executive scorecard on Day 21.</p>
-    </section>
-    <section class="panel" id="downloads">
-      <h2 class="section-title">Downloads &amp; Guides</h2>
-      <div class="tiles cols-4">
-        <div class="tile"><strong>Complete Toolkit</strong><p class="small">Cadence, checklists, scoring model, and playbooks.</p><div class="cta"><a class="btn" href="toolkit.pdf">Download Toolkit (PDF)</a></div></div>
-        <div class="tile"><strong>Quickstart Guide</strong><p class="small">21‑day starter: scope, self‑healing, chaos drill, scorecard.</p><div class="cta"><a class="btn secondary" href="quickstart.pdf">Download Quickstart (PDF)</a></div></div>
-        <div class="tile"><strong>Day‑1 Sprint Guide</strong><p class="small">90‑minute recipe to ship one self‑healing safety today.</p><div class="cta"><a class="btn secondary" href="day1-guide.docx">Download Day‑1 Guide (DOCX)</a></div></div>
-        <div class="tile"><strong>Executive Scorecard</strong><p class="small">Use the template, see a sample, and read the short guide.</p><div class="cta" style="gap:8px;flex-wrap:wrap"><a class="btn secondary" href="scorecard-template.csv">Template (CSV)</a><a class="btn secondary" href="scorecard-sample.csv">Sample (CSV)</a><a class="btn secondary" href="scorecard-guide.txt">Guide (TXT)</a></div></div>
-      </div>
-    </section>
-    <section class="panel" id="industries">
-      <h2 class="section-title">Sample Resilience Orbit by Industry</h2>
-      <div class="tiles"><div class="tile"><details><summary>Retail / Services</summary><ul><li><strong>Volatility:</strong> seasonal spikes; POS/service desk outages.</li><li><strong>Metrics:</strong> checkout success; queue time; reconciliation accuracy.</li><li><strong>Upgrades:</strong> offline‑capable flows; payment failover; live store health dashboards.</li></ul></details></div><div class="tile"><details><summary>Payments / FinTech</summary><ul><li><strong>Volatility:</strong> gateway latency; issuer declines.</li><li><strong>Metrics:</strong> auth rate; chargeback ratio; settlement timing.</li><li><strong>Upgrades:</strong> smart retries; provider failover; webhook hardening.</li></ul></details></div><div class="tile"><details><summary>SaaS / Platforms</summary><ul><li><strong>Volatility:</strong> noisy neighbor; multi‑tenant load.</li><li><strong>Metrics:</strong> error budgets; rollback time; ticket volume.</li><li><strong>Upgrades:</strong> progressive delivery; circuit breakers; golden signals dashboards.</li></ul></details></div></div>
-      <div class="tiles" style="margin-top:12px"><div class="tile"><details><summary>Healthcare</summary><ul><li><strong>Volatility:</strong> EMR integrations; identity assurance; privacy constraints.</li><li><strong>Metrics:</strong> SLO uptime; message delivery success; MTTA/MTTR.</li><li><strong>Upgrades:</strong> idempotent interfaces; queue backpressure; DR tests with audit trail.</li></ul></details></div><div class="tile"><details><summary>Manufacturing / OT</summary><ul><li><strong>Volatility:</strong> factory network reliability; edge device drift.</li><li><strong>Metrics:</strong> data freshness; job success rate; mean time between failures.</li><li><strong>Upgrades:</strong> edge buffering; drift detection; offline safe modes.</li></ul></details></div><div class="tile"><details><summary>Public Sector</summary><ul><li><strong>Volatility:</strong> traffic bursts around deadlines; policy changes.</li><li><strong>Metrics:</strong> page success rate; queue time; case resolution time.</li><li><strong>Upgrades:</strong> autoscaling; CDN optimization; accessibility monitoring.</li></ul></details></div></div>
-    </section>
-    <section class="panel" id="about">
-      <h2 class="section-title">About the Creator</h2>
-      <p>Resilience Orbit™ was created by <strong><a href="https://www.linkedin.com/in/sumayashakir/">Sumaya Shakir</a></strong> to help teams run resilience like a product —
-      small loops, measurable outcomes, and pragmatic engineering. For speaking, workshops, or implementation help, email
-      <a href="mailto:info@resilienceorbit.com">info@resilienceorbit.com</a>.</p>
     </section>
   </main>
-  <footer>© 2025 Resilience Orbit™. All rights reserved.</footer>
+
+  <footer>
+    <div>© 2025 Resilience Orbit™. All rights reserved.</div>
+  </footer>
 </body>
 </html>

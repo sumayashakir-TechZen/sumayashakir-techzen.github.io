@@ -1,0 +1,12 @@
+Metric,Definition,Target,Current Orbit Result,Previous Orbit,Trend,Notes
+Availability (%),Percentage of successful requests over total requests per SLO window,>= 99.9,,,
+MTTR (minutes),Mean time to recover from incident (P1/P2 only),<= 30,,,
+Automation Shipped (#),Number of new safeguards (kill-switch, retries, circuit-breaker, failover),>= 2,,,
+Game Day Outcome,Pass/Fail with time to recover to steady state,Pass,,,
+Change Failure Rate (%),% of deployments causing degraded service or rollback,< 10%,,,
+Coverage: Alerts & Runbooks (%),Critical services with alerts + runbooks mapped,>= 95%,,,
+SLOs at/above target (#),Count of services meeting their SLO target this orbit,>= N,,,
+Top 3 Risks,Highest risk scenarios observed or simulated this orbit,N/A,,,
+Next Orbit Priorities,Top 3 actions to close gaps,N/A,,,
+Owner,Executive owner accountable for outcomes,Name,,,
+Date,Date the scorecard is shared with execs,"",,,
