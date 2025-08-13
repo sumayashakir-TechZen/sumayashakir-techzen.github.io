@@ -5,3 +5,11 @@
 /scorecard-sample.csv
   Content-Type: text/csv; charset=utf-8
   Content-Disposition: inline; filename="scorecard-sample.csv"
+
+/pr_template_snippet.md
+  Content-Type: text/markdown; charset=utf-8
+  Content-Disposition: inline; filename="pr_template_snippet.md"
+
+/definition_of_done_additions.md
+  Content-Type: text/markdown; charset=utf-8
+  Content-Disposition: inline; filename="definition_of_done_additions.md"
