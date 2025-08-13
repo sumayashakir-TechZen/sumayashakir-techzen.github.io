@@ -1,0 +1,7 @@
+/scorecard-template.csv
+  Content-Type: text/csv; charset=utf-8
+  Content-Disposition: inline; filename="scorecard-template.csv"
+
+/scorecard-sample.csv
+  Content-Type: text/csv; charset=utf-8
+  Content-Disposition: inline; filename="scorecard-sample.csv"
