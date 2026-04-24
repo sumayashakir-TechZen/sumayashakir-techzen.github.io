@@ -1,0 +1,35 @@
+---
+layout: base.njk
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+permalink: "{% if pagination.pageNumber == 0 %}/blog/{% else %}/blog/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+title: "Blog • Resilience Orbit"
+description: "Insights on resilience engineering, fault tolerance, and stable platforms."
+---
+<h1>Blog</h1>
+
+<ul class="post-list">
+{% for post in posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <div class="muted">
+      {{ post.date }} — {{ post.data.summary }}
+    </div>
+  </li>
+{% endfor %}
+</ul>
+
+<nav class="pager" style="display:flex;justify-content:space-between;margin-top:12px;">
+  <span>
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}">← Newer</a>
+    {% endif %}
+  </span>
+  <span>
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}">Older →</a>
+    {% endif %}
+  </span>
+</nav>
