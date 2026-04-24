@@ -9,7 +9,7 @@
   <meta property="og:type" content="article"/>
   <meta property="og:title" content="{{ ogTitle or title }}"/>
   <meta property="og:description" content="{{ ogDescription or description }}"/>
-  <meta property="og:url" content="{{ (page.url or '/') | url | absoluteUrl('https://resilienceorbit.com') }}"/>
+  <meta property="og:url" content="https://resilienceorbit.com{{ page.url or '/' }}"/>
   <meta property="og:image" content="{{ ogImage or '/assets/og-default.png' }}"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
@@ -17,6 +17,7 @@
   <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/site.css"/>
+
   <style>
     :root { --bg:#0B1020; --panel:#0F172A; --ink:#E5E7EB; --muted:#94A3B8; --brand:#6366F1; --brand2:#22D3EE; --stroke:rgba(255,255,255,.12); --stroke2:rgba(255,255,255,.18); }
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--ink); background:#0B1020; }
@@ -27,6 +28,7 @@
     footer { padding:22px; text-align:center; color:var(--muted); font-size:13px; }
   </style>
 </head>
+
 <body>
   <header class="container">
     <nav style="display:flex;gap:14px;flex-wrap:wrap;font-size:14px;">
@@ -43,7 +45,7 @@
   </main>
 
   <footer>
-© {{ "now" | slice(0,4) }} Resilience Orbit™.
+    © {{ (new Date()).getFullYear() }} Resilience Orbit™.
     <a href="/about/">About</a> • <a href="/framework/">Framework</a> • <a href="/blog/">Blog</a>
   </footer>
 </body>
