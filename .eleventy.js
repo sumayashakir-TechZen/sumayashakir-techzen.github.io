@@ -1,4 +1,4 @@
-export default function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "content",
@@ -6,4 +6,4 @@ export default function (eleventyConfig) {
       output: "_site"
     }
   };
-}
+};
