@@ -1,8 +1,4 @@
-module.exports = function(eleventyConfig) {
-  // Plugins
-  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
-  eleventyConfig.addPlugin(require("@quasibit/eleventy-plugin-sitemap"));
-
+export default function (eleventyConfig) {
   return {
     dir: {
       input: "content",
@@ -10,4 +6,4 @@ module.exports = function(eleventyConfig) {
       output: "_site"
     }
   };
-};
+}
