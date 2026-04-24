@@ -15,7 +15,7 @@ description: "Insights on resilience engineering, fault tolerance, and stable pl
   <li>
     <a href="{{ post.url }}">{{ post.data.title }}</a>
     <div class="muted">
-      {{ post.date | date | dateToISO }} — {{ post.data.summary }}
+      {{ post.date | date | date("yyyy-MM-dd") }} — {{ post.data.summary }}
     </div>
   </li>
 {% endfor %}
