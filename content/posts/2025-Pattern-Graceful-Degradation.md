@@ -3,7 +3,7 @@ title: "Pattern: Graceful Degradation > All‑or‑Nothing"
 date: 2025-08-20
 summary: "Keep core value flowing even when dependencies wobble."
 tags: ["pattern","graceful-degradation","architecture","feature-flags"]
-layout: "_includes/post.njk"
+layout: post.njk
 ---
 
 Most outages are **partial**. Design for partial value, not binary uptime.
