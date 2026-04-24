@@ -3,7 +3,7 @@ title: "Case Study: 90‑Minute Chaos Day for Payments"
 date: 2025-08-20
 summary: "A short, safe drill that raised auth‑success 1.6% and cut MTTR by 22%."
 tags: ["case-study","chaos","payments","slo"]
-layout: "_includes/post.njk"
+layout: post.njk
 ---
 
 **Context:** Checkout intermittently failed when the payment gateway spiked latency.
